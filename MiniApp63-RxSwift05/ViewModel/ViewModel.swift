@@ -27,6 +27,8 @@ class ViewModel {
          textField3: Driver<String>) {
 
         let addQuestion = AddQuestion()
+        let mixText = MixText()
+        let matchText = MatchText()
 
         // MARK: ①〜⑤はココから
         result1 = textField1
@@ -65,24 +67,12 @@ class ViewModel {
 
 
         result7 = Driver.combineLatest(textField2, textField3){ text1, text2 in
-            if 5 <= text1.count && 5 <= text2.count {
-                return text1 + text1
-            } else if 0 < text1.count && 0 < text2.count {
-                return "文字数足らない"
-            } else {
-                return ""
-            }
+            mixText.mixText(text1: text1, text2: text2)
         }
         .asDriver(onErrorJustReturn: "")
 
         result8 = Driver.combineLatest(textField2, textField3){ text1, text2 in
-            if text1.count == text2.count {
-                return text1 + text1
-            } else if 0 < text1.count && 0 < text2.count {
-                return "一致してません"
-            } else {
-                return ""
-            }
+            matchText.matchText(text1: text1, text2: text2)
         }
         .asDriver(onErrorJustReturn: "")
 

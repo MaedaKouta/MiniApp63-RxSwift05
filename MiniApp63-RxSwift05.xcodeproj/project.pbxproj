@@ -17,6 +17,8 @@
 		8722FBEC289240C800688153 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 8722FBEB289240C800688153 /* RxCocoa */; };
 		8722FBEE289240C800688153 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8722FBED289240C800688153 /* RxSwift */; };
 		8722FBF02892424200688153 /* AddQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8722FBEF2892424200688153 /* AddQuestion.swift */; };
+		87A71E6E28935B150099CF5D /* MixText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A71E6D28935B150099CF5D /* MixText.swift */; };
+		87A71E7028935C380099CF5D /* MatchText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A71E6F28935C380099CF5D /* MatchText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		8722FBE22892401700688153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8722FBE8289240A700688153 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		8722FBEF2892424200688153 /* AddQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestion.swift; sourceTree = "<group>"; };
+		87A71E6D28935B150099CF5D /* MixText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixText.swift; sourceTree = "<group>"; };
+		87A71E6F28935C380099CF5D /* MatchText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				8722FBEF2892424200688153 /* AddQuestion.swift */,
+				87A71E6D28935B150099CF5D /* MixText.swift */,
+				87A71E6F28935C380099CF5D /* MatchText.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,9 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8722FBF02892424200688153 /* AddQuestion.swift in Sources */,
+				87A71E6E28935B150099CF5D /* MixText.swift in Sources */,
 				8722FBD92892401500688153 /* ViewController.swift in Sources */,
 				8722FBD52892401500688153 /* AppDelegate.swift in Sources */,
 				8722FBE9289240A700688153 /* ViewModel.swift in Sources */,
+				87A71E7028935C380099CF5D /* MatchText.swift in Sources */,
 				8722FBD72892401500688153 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
